@@ -20,8 +20,8 @@ public class AppleTree : MonoBehaviour
     public GameObject applePrefab; //prefab for instantiating apples
     public float secondsBetweenAppleDrops = 1f; // Time between apple drops
     public float chanceToChangeDirections = 0.02f; //chance that the tree changes direction (2%)
-
-
+    public static float bottomY = -20f; // Apple is destroyed at this point
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +38,11 @@ public class AppleTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < bottomY) // This if statement destroys the apple at a certain point
+        {
+            Destroy(this.gameObject);
+        }
+
         //Basic Movement
         Vector3 pos = transform.position; // records the current position
         pos.x += speed * Time.deltaTime; // adds speed to x position
