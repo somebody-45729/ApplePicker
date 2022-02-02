@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// Owner: Kyunghoon Han
+// Date: 2/1/20
+// Updated Date:
+// 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
