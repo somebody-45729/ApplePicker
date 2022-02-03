@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 259158946}
   - component: {fileID: 259158948}
   - component: {fileID: 259158947}
+  - component: {fileID: 259158949}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -202,6 +203,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259158945}
   m_CullTransparentMesh: 1
+--- !u!114 &259158949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259158945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95239238d55b8f43b8cbba7ef528ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &336243314
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -457,6 +470,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1588930414
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +762,7 @@ PrefabInstance:
     - target: {fileID: 1705582072070739088, guid: bd723d236f7eabe45a19e9d42df64c62,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1705582072070739088, guid: bd723d236f7eabe45a19e9d42df64c62,
         type: 3}
